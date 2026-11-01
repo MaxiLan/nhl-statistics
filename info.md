@@ -179,3 +179,15 @@ from datasets import load_dataset
 dataset = load_dataset("jjerlee/nhl-analytics", "games", split="train")
 print(dataset[0])
 ```
+
+---
+
+## Data Source & Automation
+
+> All underlying data is scraped, parsed, and transformed from the official NHL Edge API and market data providers.  
+> 🏒 **Upstream Source Repository:** [GitHub — `justinjjlee/NHL-Analytics`](https://github.com/justinjjlee/NHL-Analytics)  
+>
+> Automated daily GitHub Actions workflows running during the NHL season:
+> - **Game Stats & Plays:** Daily at 09:00 UTC (runs box score parsing, game summary metrics, and play-by-play events).
+> - **Betting Odds:** Daily at 20:00 UTC (captures pre-game closing lines across US and Canadian markets).
+> - **Player Aggregates:** Weekly runs updating skater and goalie season performance metrics.
